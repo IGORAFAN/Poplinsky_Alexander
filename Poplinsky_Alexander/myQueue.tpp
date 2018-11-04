@@ -14,20 +14,20 @@ myQueue<T>::~myQueue() {
 
 template<typename T>
 void myQueue<T>::pushBack(T data) {
-	for (int i(0); i < (getSize() - 1); i++) {
-		ptrArray[i] = ptrArray[i + 1];
+	for (int i(0); i < (count - 1); i++) {
+	ptrArray[i] = ptrArray[i + 1];
 	}
-	ptrArray[count - 1)] = data;
+	ptrArray[count - 1] = data;
 	cout << endl << "Set data at the end of the queue - " << data << endl;
 }
 
 template<typename T>
 void myQueue<T>::popFront() {
 	cout << endl << "From the queue deleted the first position - " << ptrArray[0] << endl;
-	for (int i(0); i < (getSize() - 1); i++) {
-		ptrArray[i] = ptrArray[i + 1];
+	for (int i(0); i < (count - 1); i++) {
+	ptrArray[i] = ptrArray[i + 1];
 	}
-	ptrArray[count - 1)] = NULL;
+	ptrArray[count - 1] = NULL;
 }
 
 template<typename T>

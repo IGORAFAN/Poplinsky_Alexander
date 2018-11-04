@@ -7,7 +7,7 @@ int main() {
 	myQueue.enterQueue();
 	myQueue.printQueue();
 
-	myQueue.pushBack(678.231);
+	myQueue.pushBack(678.2);
 	myQueue.printQueue();
 
 	myQueue.popFront();
